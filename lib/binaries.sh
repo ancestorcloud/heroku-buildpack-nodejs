@@ -98,9 +98,9 @@ install_prince() {
   wget https://www.princexml.com/download/prince_11.1-1_ubuntu14.04_amd64.deb -o prince.debi
 
   ### Install gdebi
-  sudo aptitude install gdebi
+  aptitude install gdebi
 
   ### Install Prince
-  sudo gdebi prince.debi
+  gdebi prince.debi
 }
 
