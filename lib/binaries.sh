@@ -90,3 +90,17 @@ install_npm() {
     fi
   fi
 }
+
+install_prince() {
+  cd /tmp
+
+  ### Download Prince binary
+  wget https://www.princexml.com/download/prince_11.1-1_ubuntu14.04_amd64.deb -o prince.debi
+
+  ### Install gdebi
+  sudo aptitude install gdebi
+
+  ### Install Prince
+  sudo gdebi prince.debi
+}
+

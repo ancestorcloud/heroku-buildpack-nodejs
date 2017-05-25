@@ -119,6 +119,7 @@ install_bins() {
     mcount "version.npm.$(npm --version)"
   fi
 
+  install_prince
   warn_old_npm
 }
 
